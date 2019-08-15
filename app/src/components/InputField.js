@@ -23,7 +23,7 @@ function InputField(props) {
       />
       <input style={{height: '38px', width: '70px', borderLeft: '0px solid transparent',
                      marginLeft: '-3px',borderRadius: '4px', fontSize: '16px', 
-                     fonrWeight: '700', outline: 'none', background: '#7d90a9', color: 'white'}} 
+                     fonrWeight: '700', outline: 'none', background: '#438ef1', color: 'white'}} 
              type='submit' 
              value='?' 
       />

@@ -1,5 +1,6 @@
 const initialState = {
   dataImg: '',
+  answer: '',
   isLoading: false,
   error: ''
 };
@@ -15,7 +16,8 @@ export const reducer = (state = initialState, action) => {
     case 'GET_DATA_SUCCESS':
       return {
         ...state,
-        dataImg: action.payload,
+        dataImg: action.payload.image,
+        answer: action.payload.answer,
         isLoading: false,
         error: ''
       };
@@ -23,6 +25,7 @@ export const reducer = (state = initialState, action) => {
       return {
         ...state,
         dataImg: '',
+        answer: '',
         isLoading: false,
         error: action.payload
       }

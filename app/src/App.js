@@ -10,7 +10,8 @@ function App(props) {
     <div className="App">
       <h1 style={{marginTop: '20px'}}>Should I ...</h1>
       <InputField getData={props.getData} />
-      <Response isLoading={props.isLoading} dataImg={props.dataImg} error={props.error} />
+      <Response isLoading={props.isLoading} dataImg={props.dataImg} 
+                error={props.error} answer={props.answer}/>
     </div>
   );
 }
@@ -19,6 +20,7 @@ const mapStateToProps = state => {
   return {
     isLoading: state.isLoading,
     dataImg: state.dataImg,
+    answer: state.answer,
     error: state.error
   };
 };
