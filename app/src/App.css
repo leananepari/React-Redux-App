@@ -1,0 +1,11 @@
+
+.App, html {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #d8dfe8;
+  width: 100%;
+  margin: 0;
+  height: -webkit-fill-available;
+}
